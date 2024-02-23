@@ -10,10 +10,10 @@ export default class Character {
                 throw new Error ("Персонаж не существует");
             }
 
-        this.name = name,
-        this.type = type,
-        this.health = 100,
-        this.level = 1
+        this.name = name;
+        this.type = type;
+        this.health = 100;
+        this.level = 1;
     }
 }
 

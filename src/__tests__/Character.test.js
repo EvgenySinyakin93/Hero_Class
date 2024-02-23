@@ -10,12 +10,7 @@ test("checking Bowerman", () => {
       attack: 25,
       defence: 25,
     };
-    expect({
-        name: character.name,
-        type: character.type,
-        health: character.health,
-        level: character.level
-    }).toEqual(correctCharacter);
+    expect(character).toEqual(correctCharacter);
 });
 
 test("Checking name", () => {
