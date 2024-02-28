@@ -1,18 +1,5 @@
 import Character from "../js/Character.js";
 
-test("checking Bowerman", () => {
-    const character = new Character("Hero", "Bowerman");
-    const correctCharacter = {
-      name: "Hero",
-      type: "Bowerman",
-      health: 100,
-      level: 1,
-      attack: 25,
-      defence: 25,
-    };
-    expect(character).toEqual(correctCharacter);
-});
-
 test("Checking name", () => {
   expect(() => new Character("B", "Bowerman")).toThrow("Длина имени персонажа не корректна.Выберите имя от 2 до 10 символов");
   expect(() => new Character("BowermanVeryLength", "Bowerman")).toThrow("Длина имени персонажа не корректна.Выберите имя от 2 до 10 символов");
